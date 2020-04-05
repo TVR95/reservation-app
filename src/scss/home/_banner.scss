@@ -1,0 +1,62 @@
+.banner {
+    border-top: solid darken($primary-color, 20%) 0.05rem;
+    display: flex;
+    height: 60rem;
+    width: 100%;
+
+    &__image {
+        background: linear-gradient(
+            to right,
+            rgba($primary-color, 0.8),
+            rgba($primary-color, 0)
+        ), url('../../assets/images/banner_home.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__search {
+        background-color: $secondary-color;
+        border: 1rem solid $secondary-color;
+        border-radius: 8px;
+        position: absolute;
+        margin: 10% 5%;
+
+        -webkit-box-shadow: 9px 11px 4px -5px rgba(0,0,0,0.44);
+        -moz-box-shadow: 9px 11px 4px -5px rgba(0,0,0,0.44);
+        box-shadow: 9px 11px 4px -5px rgba(0,0,0,0.44);
+
+        input[type=text], select {
+            width: 100%;
+            padding: 1rem;  
+            border: 0.1rem solid darken($secondary-color, 10%);
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        input[type=number], select {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1rem;
+            display: inline-block;
+            border: 0.1rem solid darken($secondary-color, 10%);
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        button {
+            background-color: $primary-color;
+            border: 0.1rem solid darken($secondary-color, 10%);
+            border-radius: 8px;
+            cursor: pointer;
+            color: set-text-color($primary-color);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.1rem;
+            height: 3rem;
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+}

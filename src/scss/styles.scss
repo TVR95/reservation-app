@@ -1,1 +1,44 @@
 @import 'config';
+@import './home/banner';
+
+a {
+    color: set-text-color($primary-color);
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: $primary-color;
+}
+
+footer {
+    background-color: $primary-color;
+    border-top: solid darken($primary-color, 20%) 0.05rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav-login {
+    display: inline-block;
+    padding-left: 80vw;
+}
+
+.navigation {
+    display: inline-block;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navigation a {
+    &:hover {
+        color: $secondary-color;
+        @include transition-ease;
+    }
+}

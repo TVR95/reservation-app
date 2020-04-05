@@ -2,7 +2,7 @@ import React from "react";
 
 function NavLogin() {
     return (
-        <div className="navLogin">
+        <div className="nav-login">
             <button>Sign in</button>
             <button>Sign up</button>
         </div>
